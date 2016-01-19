@@ -15,7 +15,7 @@ $(document).ready(function() {
 
     $(".year").text(year);
 
-    if (isNaN(year)) {
+    if ((isNaN(year)) || (year < 0)) {
       alert("Please enter a valid year.");
     } else if(!result) {
       $(".not").text("not");

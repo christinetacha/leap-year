@@ -18,4 +18,8 @@ describe('leapYear', function() {
   it("is NaN", function() {
     expect(leapYear("hi")).to.equal(true);
   });
+
+  it("is a negative number", function() {
+    expect(leapYear(-2000)).to.equal(true);
+  });
 });
